@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --very-dark-magneta: hsl(300, 43%, 22%);
+    --soft-pink: hsl(333, 80%, 67%);
+    --dark-grayish-magenta: hsl(303, 10%, 53%);
+    --light-grayish-magenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+
+body{
+    font-family: 'Spartan', sans-serif;
+    font-size: 1rem;
+    background: url(images/bg-pattern-top-desktop.svg);
+    background-position: 20% 30%;
+    background-size: cover;
+}
+
+.title, .profile-name, .rated-by{
+    font-weight: 700;
+}
+
+.subtitle, .role{
+    font-weight: 400;
+}
+
+.profile-review{
+    font-weight: 500;
+}
+
+
+.screen{
+    max-width: 375px;
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.flex-container-desktop{
+    display: flex;
+    flex-direction: column;
+}
+
+.title, .subtitle, .section-one{
+    text-align: center;
+    margin: 0;
+}
+
+.title{
+    margin: 1em 0;
+}
+
+.subtitle, .section{
+    margin-bottom: 1em;
+}
+
+.subtitle{
+    opacity: .7;
+}
+
+.rating{
+    margin-top: 1em;
+    background: var(--light-grayish-magenta);
+    padding: 1em;
+    color: var(--very-dark-magneta);
+    border-radius: 10px;
+}
+
+.section-two{
+    margin: 2em 0;
+    color: var(--white);
+}
+
+.review-card{
+    background: var(--very-dark-magneta);
+    margin-top: 1em;
+    padding: 2em;
+    border-radius: 10px;
+}
+
+.profile-pic{
+    border-radius: 50%;
+}
+
+.profile-description{
+    display: flex;
+    margin-bottom: 2em;
+}
+
+.profile-info{
+    margin: 1em 0 0 1em;
+}
+
+.role{
+    color: var(--soft-pink);
+    opacity: .7;
+}
+
+@media (min-width: 1100px){
+    .screen{
+        max-width: 80%;
+        height: 100vh;
+    }
+
+    .title, .subtitle, .section-one{
+        text-align: left;
+        margin-bottom: .2em;
+    }
+    .subtitle{
+        margin-top: 0;
+    }
+
+    .flex-container-desktop{
+        flex-direction: row;
+        justify-content: space-between;
+        padding-top: 2em;
+    }
+
+    .heading{
+        width: 35%;
+    }
+    .section-one{
+        width: 50%;
+    }
+
+    .rating{
+        display: flex;
+        width: 100%;
+    }
+
+    .rating-two{
+        margin-left: 2em;
+    }
+
+    .rating-three{
+        margin-left: 4em;
+    }
+
+    .rated-by{
+        margin-left: auto;
+        margin-right: 2em;
+    }
+
+    .section-two{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4em;
+    }
+
+    .review-card{
+        width: 30%;
+        height: 100%;
+    }
+
+    .card-two{
+        margin-top: 2em;
+    }
+
+    .card-three{
+        margin-top: 4em;
+    }
+
+}
